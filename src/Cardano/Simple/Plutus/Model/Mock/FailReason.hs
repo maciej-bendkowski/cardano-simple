@@ -34,7 +34,7 @@ data FailReason
     GenericFail String
   | -- | Missing minting policy script for the currency symbol
     NoMintingPolicy [CurrencySymbol]
-  deriving (Show)
+  deriving (Eq, Show)
 
 data DCertError
   = RegStakeError StakingCredential
